@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.ActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".ui.upload.UploadQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_footer"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardElevation="@dimen/fab_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_ip_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="8"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:theme="@style/GreenButton"
+                    android:hint="@string/server_address"
+                    android:inputType="textPersonName" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_edit_address"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_border" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/btn_submit_address"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_done_black" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_details" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_test_no"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/corner_border_gray"
+                            android:ems="10"
+                            android:hint="@string/test_no"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/et_Question_No"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/corner_border_gray"
+                            android:ems="10"
+                            android:hint="@string/question_no"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/question"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/et_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/corner_border_gray"
+                            android:ems="10"
+                            android:hint="@string/question"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="8dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/options"
+                            android:textAlignment="center"
+                            android:textSize="22sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/chk_btn_option_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:theme="@style/GreenButton" />
+
+                            <EditText
+                                android:id="@+id/et_option_1"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/corner_border_gray"
+                                android:ems="10"
+                                android:hint="@string/option_1"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="8dp"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/chk_btn_option_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:theme="@style/GreenButton" />
+
+                            <EditText
+                                android:id="@+id/et_option_2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/corner_border_gray"
+                                android:ems="10"
+                                android:hint="@string/option_2"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="8dp"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/chk_btn_option_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:theme="@style/GreenButton" />
+
+                            <EditText
+                                android:id="@+id/et_option_3"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/corner_border_gray"
+                                android:ems="10"
+                                android:hint="@string/option_3"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="8dp"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/chk_btn_option_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="16dp"
+                                android:theme="@style/GreenButton" />
+
+                            <EditText
+                                android:id="@+id/et_option_4"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/corner_border_gray"
+                                android:ems="10"
+                                android:hint="@string/option_4"
+                                android:inputType="textPersonName"
+                                android:paddingLeft="8dp"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_submit_question"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:theme="@style/GreenButton" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_cancel_question"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:theme="@style/RedButton" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

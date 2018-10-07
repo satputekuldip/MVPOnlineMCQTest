@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:paddingTop="150dp"
+    tools:context=".ui.importquestions.ImportQuestionsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/questions_file" />
+
+            <TextView
+                android:id="@+id/tvQuestionFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty" />
+
+            <Button
+                android:id="@+id/btnBrowseQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/browse_questions_file" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/options_file" />
+
+            <TextView
+                android:id="@+id/tvOptionsFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/empty" />
+
+            <Button
+                android:id="@+id/btnBrowseOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/browse_options_file" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+
+                android:id="@+id/btnSubmit"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
+
+            <Button
+
+                android:id="@+id/btnCancel"
+                style="@style/Button.Action.Negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

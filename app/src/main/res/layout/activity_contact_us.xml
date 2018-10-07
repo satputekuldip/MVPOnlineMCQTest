@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_website"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/official_website"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bcbcbc" />
+
+        <LinearLayout
+            android:id="@+id/item_email"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/email_us"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sparkenterprise_gmail_com"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bcbcbc" />
+
+        <LinearLayout
+            android:id="@+id/item_contact"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="Contact No."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_9763626132"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bcbcbc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/icon_google_plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_google_plus" />
+
+            <ImageButton
+                android:id="@+id/icon_facebook"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_facebook" />
+
+            <ImageButton
+                android:id="@+id/icon_twitter"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_twitter" />
+
+            <ImageButton
+                android:id="@+id/icon_skype"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_skype" />
+
+            <ImageButton
+                android:id="@+id/icon_whats_app"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_whatsapp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+    <com.pixplicity.fontview.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/copyright_spark"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:pix_font="fonts/Ubuntu-R.ttf" />
+    <com.pixplicity.fontview.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/all_rights_reserved"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:pix_font="fonts/Ubuntu-R.ttf" />
+    </LinearLayout>
+</RelativeLayout>

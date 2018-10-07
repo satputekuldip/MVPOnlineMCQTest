@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".ui.sync.from.server.SyncFromServerActivity">
+
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:arcColor="#e10b0f"
+        app:arcWidth="7dp"
+        app:finalIcon="@drawable/ic_done"
+        app:reusable="true">
+
+        <!--Google FAB-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:baselineAlignBottom="true"
+            app:borderWidth="1dp"
+            app:fabCustomSize="50dp"
+            app:elevation="@dimen/fab_elevation"
+            app:rippleColor="@color/fab_ripple"
+            app:srcCompat="@drawable/ic_cloud_download" />
+
+        <!-- Another FAB well known libraries. Uncomment any one of the fabs to test it if you want.
+         You will need to update MainActivity references and castings to match the new lib. -->
+
+        <!-- Makovkastar (melkynov) FAB -->
+
+        <!--<com.melnykov.fab.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_upload"-->
+        <!--app:fab_colorNormal="@color/fab_primary"-->
+        <!--app:fab_colorPressed="@color/fab_primary_pressed"-->
+        <!--app:fab_colorRipple="@color/fab_ripple"-->
+        <!--app:fab_type="mini"-->
+        <!--/>-->
+
+        <!-- Futuresimple FABs -->
+
+        <!-- Basic one -->
+
+        <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:fab_icon="@drawable/ic_upload"-->
+        <!--app:fab_colorNormal="@color/fab_primary"-->
+        <!--app:fab_colorPressed="@color/fab_primary_pressed"-->
+        <!--/>-->
+
+        <!--AddFloatingActionButton-->
+        <!--<com.getbase.floatingactionbutton.AddFloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:fab_plusIconColor="#ffffff"-->
+        <!--app:fab_colorNormal="@color/fab_primary"-->
+        <!--app:fab_colorPressed="@color/fab_primary_pressed"-->
+        <!--/>-->
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_to_sync"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        app:layout_anchor="@+id/fabProgressCircle"
+        app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

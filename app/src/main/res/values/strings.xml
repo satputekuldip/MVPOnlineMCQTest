@@ -1,0 +1,126 @@
+<!--
+  ~ Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://mindorks.com/license/apache-v2
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+
+<resources>
+    <string name="app_name">ITI Exam</string>
+
+    <!--Toolbar menus-->
+    <string name="clear">Clear</string>
+    <string name="cut">Cut</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+
+    <!--Drawer Menus-->
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="feed">My Feed</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="api_default_error">Something wrong happened!</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="connection_error">Internet connection lost!</string>
+
+    <!--Login-->
+    <string name="login_dummy">Login Dummy</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <!--Login Validation-->
+    <string name="empty_email">Please provide a non empty email.</string>
+    <string name="invalid_email">Please provide a valid email.</string>
+    <string name="empty_password">Please provide a non empty password.</string>
+
+    <!--about fragment-->
+    <string name="project_info">This sample app implements MVP architecture using Dagger2, GreenDao, RxJava, FastAndroidNetworking and PlaceholderView</string>
+    <string name="link_mvp_blog">1. https://blog.mindorks.com</string>
+    <string name="link_mvp_repo">2. https://github.com/MindorksOpenSource/android-mvp-architecture</string>
+    <string name="link_mindorks_blog">3. https://blog.mindorks.com</string>
+    <string name="link_mindorks_repo">4. https://github.com/MindorksOpenSource</string>
+    <string name="version">"version"</string>
+
+    <!--rating dialog-->
+    <string name="rate_us">Rate Us</string>
+    <string name="rating_message">Please let us know, how can we improve ourselves?</string>
+    <string name="rating_play_store_redirect_message_line_1">Awesome! Thank you for the 5 stars.</string>
+    <string name="rating_play_store_redirect_message_line_2">Please help others, in knowing some good things about this app.</string>
+    <string name="rating_play_store_text">Rate us on Play Store</string>
+    <string name="rating_not_provided_error">Please provide us stars.</string>
+    <string name="rating_thanks">Thank you!</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <!--button-->
+    <string name="later">Later</string>
+    <!--feed-->
+    <string name="title">My Feed</string>
+    <string name="open_source">Open Source</string>
+    <string name="blog">Blog</string>
+
+    <!--empty state-->
+    <string name="empty_screen">We do not have anything\nhere right now.</string>
+    <string name="please_retry">Please Retry</string>
+    <string name="retry">Retry</string>
+    <string name="questions_file">Questions File</string>
+    <string name="browse_questions_file">Browse Questions File</string>
+    <string name="empty">...</string>
+    <string name="options_file">Options File</string>
+    <string name="browse_options_file">Browse Options File</string>
+    <string name="submit">Submit</string>
+    <string name="import_questions">Import Questions</string>
+    <string name="sync_from_server">Sync From Server</string>
+    <string name="upload_questions">Upload Questions</string>
+    <string name="download_data_from_server">Download Data From Server</string>
+    <string name="cloud_sync_complete">Cloud Sync Complete!</string>
+    <string name="question_details">Question Details</string>
+    <string name="question">QUESTION</string>
+    <string name="options">OPTIONS</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="ip_address">IP Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="question_no">Question No</string>
+    <string name="test_no">Test No.</string>
+    <string name="server_address">Server Address</string>
+    <string name="communication">Communication</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+    <string name="app_info">App Info</string>
+    <string name="official_website">Official Website</string>
+    <string name="email_us">Email Us</string>
+    <string name="sparkenterprise_gmail_com">sparkenterprise@gmail.com</string>
+    <string name="_9763626132">9763626132</string>
+
+    <string name="copyright_spark">Copyright © 2017 SPARK ENTERPRISE PVT. LTD.</string>
+    <string name="all_rights_reserved">All rights reserved.</string>
+    <string name="ceo">C.E.O.</string>
+
+    <string name="spark_enterprise">SpArK enTerprISe</string>
+    <string name="developer">Developer</string>
+    <string name="spark_enterptise">SPARK Enterprise</string>
+    <string name="click_to_sync">Click to Sync</string>
+
+</resources>
